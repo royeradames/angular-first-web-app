@@ -5,7 +5,9 @@ Here are the instructions for generating a new Angular project with PWA support 
 2. Navigate to the directory where you want to create your new Angular project.
 3. Run the following command to create a new Angular project with PWA support: 
 ```bash
-ng new my-app --routing --style scss --service-worker
+ng new my-app
+cd my-app
+ng add @angular/pwa
 ```
 This will create a new Angular project with the `my-app` name, using SCSS for styling, and with routing and service worker support enabled.
 4. After the project is generated, navigate to the project directory by running the following command: `cd my-app`
