@@ -1,27 +1,32 @@
-# AngularFirstWebApp
+Here are the instructions for generating a new Angular project with PWA support and resolving the **this.tree.readText** is not a function error:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+# Generating a new Angular project with PWA support
+1. Open a terminal or command prompt.
+2. Navigate to the directory where you want to create your new Angular project.
+3. Run the following command to create a new Angular project with PWA support: 
+```bash
+ng new my-app --routing --style scss --service-worker
+```
+This will create a new Angular project with the `my-app` name, using SCSS for styling, and with routing and service worker support enabled.
+4. After the project is generated, navigate to the project directory by running the following command: `cd my-app`
+5. Run the following command to start the development server: `ng serve --open`
+This will start the development server and open your new Angular project in your default web browser.
 
-## Development server
+# Resolving the this.tree.readText is not a function error
+If you encounter the this.tree.readText is not a function error while running the ng new command or the ng serve command, open a terminal or command prompt.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Navigate to the directory where your Angular project is located.
 
-## Code scaffolding
+Run the following command to update the @angular/cli package to the latest version:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+npm install @angular/cli@latest
+```
 
-## Build
+After the package is updated, try running the ng new or ng serve command again to see if the error is resolved.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+That's it! I hope this helps you generate a new Angular project with PWA support and resolve any issues related to the this.tree.readText is not a function error.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
